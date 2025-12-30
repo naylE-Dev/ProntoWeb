@@ -24,7 +24,25 @@
       <h3>Instagram</h3>
       <p>Contato rápido e direto para orçamentos.</p>
       <a class="contato-btn" href="https://instagram.com/nayle_dev" target="_blank">
-        Abrir Instagram
+        Abrir conversa no Instagram
+      </a>
+    </div>
+
+    <div class="contato-card">  
+      <h3>Discord</h3>
+      <p>Contato informal ou dúvidas rápidas.</p>
+      <button class="contato-btn" id="discordBtn">
+        Copiar usuário do Discord
+      </button>
+    </div>
+
+    <div class="contato-card">
+      <h3>Email</h3>
+      <p>Para propostas mais detalhadas e profissionais.</p>
+      <a class="contato-btn" 
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=naylE9@proton.me&su=Contato%20pelo%20site&body=Olá,%20vim%20pelo%20seu%20site!"
+        target="_blank">
+        Enviar Email
       </a>
     </div>
 
@@ -35,24 +53,7 @@
         Ver GitHub
       </a>
     </div>
-
-    <div class="contato-card">
-      <h3>Email</h3>
-      <p>Para propostas mais detalhadas e profissionais.</p>
-      <a class="contato-btn" href="mailto:naylE9@proton.me">
-        Enviar Email
-      </a>
-    </div>
-
-    <div class="contato-card">  
-      <h3>Discord</h3>
-      <p>Contato informal ou dúvidas rápidas.</p>
-      <button class="contato-btn" id="discordBtn">
-        @nayle_dev
-      </button>
-    </div>
-
-
+    
   </div>
 </section>
 
@@ -71,11 +72,11 @@
 <script>
   const btn = document.getElementById("discordBtn");
   const username = "nayle_dev";
-  const textoOriginal = "@nayle_dev";
+  const textoOriginal = "Copiar usuário do Discord";
 
   btn.addEventListener("click", () => {
     navigator.clipboard.writeText(username).then(() => {
-      btn.textContent = "Copiado para a área de transferência!";
+      btn.textContent = "Usuário copiado. Cole no Discord.";
       btn.disabled = true;
 
       setTimeout(() => {
