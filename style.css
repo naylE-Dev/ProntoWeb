@@ -14,7 +14,7 @@ header {
 }
 
 header img {
-  width: 80px;        /* tamanho visível */
+  width: 110px;        /* tamanho visível */
   max-width: 100%;
   height: auto;        /* mantém proporção */
   image-rendering: auto;
@@ -197,5 +197,5 @@ button.contato-btn {
   font-weight: 400;
   color: white;
   margin-top: -20px;
-  margin-bottom: 20rem;
+  margin-bottom: 5rem;
 }
